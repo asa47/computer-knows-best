@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{8133FFDF-E6E5-A1FF-68A1-A1302CAE90C8}</ProjectGuid>
+	<ProjectGuid>{D08C9E62-EA51-E34D-40B0-31D6F8FB8857}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\SCRIPTS\AI\EnemyAI.cs" />
      <Compile Include="Assets\SCRIPTS\Canvas\spawnAnimation.cs" />
      <Compile Include="Assets\SCRIPTS\Level\Doors.cs" />
      <Compile Include="Assets\SCRIPTS\MouseLook.cs" />
@@ -55,6 +56,7 @@
      <Compile Include="Assets\SCRIPTS\Player\LaserScript.cs" />
      <Compile Include="Assets\SCRIPTS\Player\MouseLook2.cs" />
      <Compile Include="Assets\SCRIPTS\Player\PlayerRaycast.cs" />
+     <Compile Include="Assets\SCRIPTS\Player\UpperBodyRotation.cs" />
      <Compile Include="Assets\SCRIPTS\Player\playerMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
@@ -62,7 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{F175F499-68C7-D10C-A9A4-8E53482FA08E}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{6EA23650-5F9F-1923-EB1A-2131424B8949}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
