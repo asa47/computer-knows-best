@@ -1,10 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_script\Player\PlayerRaycast.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_script\Ojectives\ObjectivesController.cs">
     <Files>
-      <File FileName="Assets\_script\Ojectives\DisplayOjective.cs" Line="26" Column="79" />
+      <File FileName="Assets\_script\Player\PlayerRaycast.cs" Line="25" Column="5" />
+      <File FileName="Assets\_script\Ojectives\DisplayOjective.cs" Line="20" Column="52" />
       <File FileName="Assets\_script\Ojectives\ObjectivesController.cs" Line="25" Column="15" />
-      <File FileName="Assets\_script\Player\PlayerRaycast.cs" Line="35" Column="5" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="25" Column="32" />
+      <File FileName="Assets\_script\Ojectives\Objective.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

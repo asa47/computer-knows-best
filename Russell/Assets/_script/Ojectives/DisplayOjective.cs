@@ -4,6 +4,7 @@ using System.Collections;
 
 public class DisplayOjective : MonoBehaviour {
 
+	//Set the objective through this index
 	public int indexOjective = 0;
 
 	private GameObject objectivesController;
@@ -11,10 +12,12 @@ public class DisplayOjective : MonoBehaviour {
 
 	void Start()
 	{
+		//Get the ObjectiveController
 		objectivesController = GameObject.FindGameObjectWithTag ("ObjectiveController");
 	}
 
 	void OnTriggerStay (Collider other) {
+		//If the player is in the room show the objective
 		if(other.gameObject.tag == "Player" && timer < 5.0f)
 		{
 			objectivesController.GetComponent<Image> ().color = Color.Lerp (objectivesController.GetComponent<Image> ().color, new Color(1f, 1f, 1f, 1f), 2.0f * Time.deltaTime);
