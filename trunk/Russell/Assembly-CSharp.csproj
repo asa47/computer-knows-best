@@ -49,6 +49,7 @@
      <Compile Include="Assets\_script\Ojectives\DisplayOjective.cs" />
      <Compile Include="Assets\_script\Ojectives\Objective.cs" />
      <Compile Include="Assets\_script\Ojectives\ObjectivesController.cs" />
+     <Compile Include="Assets\_script\Player\LaserScript.cs" />
      <Compile Include="Assets\_script\Player\PlayerRaycast.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

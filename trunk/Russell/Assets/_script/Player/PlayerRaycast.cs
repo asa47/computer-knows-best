@@ -3,39 +3,28 @@ using System.Collections;
 
 public class PlayerRaycast : MonoBehaviour {
 
-	private float timer = 0;
-	private bool laserOn = false;
-	private ParticleSystem particle;
+	public GameObject prefabLaser;
+	//private GameObject camera;
 
-	// Use this for initialization
 	void Start () {
-		particle = GameObject.FindGameObjectWithTag ("Laser").GetComponent<ParticleSystem> ();
-		particle.Stop ();
+		//Get the main camera object
+		//camera = GameObject.FindGameObjectWithTag ("MainCamera");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if(!laserOn && Input.GetMouseButtonDown(0)){
-			particle.Play();
-			laserOn = true;
-		}
+		//On mouse click instantiate a new prefab laser and set the position
+		if(Input.GetMouseButtonDown(0)){
+			GameObject laser = Instantiate(prefabLaser, transform.position + Vector3.up * 0.5f, Quaternion.identity) as GameObject;
+			laser.GetComponent<LaserScript>().startPosition = laser.transform.position;
+			laser.GetComponent<LaserScript>().endPosition = transform.position + Camera.main.transform.forward * 10 + Vector3.up * 1.0f;
 
-		if(laserOn)
-		{
-			timer += Time.deltaTime;
 			RaycastHit hit;
-			if(Physics.Raycast (transform.position, transform.forward, out hit, 10.0f)) {
-				//Debug.Log(hit.transform.name);
+			if(Physics.Raycast (laser.transform.position, laser.GetComponent<LaserScript>().endPosition, out hit, 20.0f)) {
+				Debug.Log(hit.transform.name);
 			}
-
-			if(timer > 0.5){
-				timer = 0;
-				laserOn = false;
-				particle.Stop();
-			}
-
-		} 
+		}
 	}
 
 
