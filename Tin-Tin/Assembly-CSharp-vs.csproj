@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{65E5294B-50E7-5252-FA8B-4A30281037C8}</ProjectGuid>
+	<ProjectGuid>{8133FFDF-E6E5-A1FF-68A1-A1302CAE90C8}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\SCRIPTS\Canvas\spawnAnimation.cs" />
      <Compile Include="Assets\SCRIPTS\Level\Doors.cs" />
+     <Compile Include="Assets\SCRIPTS\MouseLook.cs" />
      <Compile Include="Assets\SCRIPTS\Ojectives\DisplayOjective.cs" />
      <Compile Include="Assets\SCRIPTS\Ojectives\Objective.cs" />
      <Compile Include="Assets\SCRIPTS\Ojectives\ObjectivesController.cs" />
@@ -56,7 +57,7 @@
      <Compile Include="Assets\SCRIPTS\Player\PlayerRaycast.cs" />
      <Compile Include="Assets\SCRIPTS\Player\playerMovement.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/cstgj/Desktop/Computer-Knows-Best/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/cstgj/Desktop/TEST CKB/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{65E5294B-50E7-5252-FA8B-4A30281037C8}</ProjectGuid>
+	<ProjectGuid>{8133FFDF-E6E5-A1FF-68A1-A1302CAE90C8}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\SCRIPTS\Canvas\spawnAnimation.cs" />
      <Compile Include="Assets\SCRIPTS\Level\Doors.cs" />
+     <Compile Include="Assets\SCRIPTS\MouseLook.cs" />
      <Compile Include="Assets\SCRIPTS\Ojectives\DisplayOjective.cs" />
      <Compile Include="Assets\SCRIPTS\Ojectives\Objective.cs" />
      <Compile Include="Assets\SCRIPTS\Ojectives\ObjectivesController.cs" />
@@ -61,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{9A640CD5-405C-521E-74A3-2CF43B51D1E3}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{F175F499-68C7-D10C-A9A4-8E53482FA08E}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
