@@ -19,7 +19,7 @@ public class DoorSpawnEnter : MonoBehaviour {
 	{
 		if (!Activated) {
 			
-			if (target.gameObject.tag == "Player") {
+			if (target.gameObject.tag == "Player"||target.gameObject.tag == "Enemy") {
 				opening1Door = true;
 				closing1Door = false;
 				//Debug.Log ("Collided");

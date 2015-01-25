@@ -79,7 +79,7 @@ public class EnemyAI : MonoBehaviour
 		//cast ray towards player. if the ray hits something this means that the player is occluded. If it doesn't......check if the angle is smaller than the maximum visible angle...
 		bool isVisible = false;
 		RaycastHit hit;
-		Debug.Log (playerReference);
+		//Debug.Log (playerReference);
 		if (Physics.Raycast(transform.position, playerReference.transform.position - transform.position, out hit, viewDistance, rayMask)) // Layer Mask and Distance
 		{
 			print ("Hit: " + hit.point.ToString());

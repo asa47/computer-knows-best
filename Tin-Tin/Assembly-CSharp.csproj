@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\SCRIPTS\AI\EnemyAI.cs" />
+     <Compile Include="Assets\SCRIPTS\AI\NPCAI.cs" />
      <Compile Include="Assets\SCRIPTS\Canvas\spawnAnimation.cs" />
      <Compile Include="Assets\SCRIPTS\Level\DoorSpawnEnter.cs" />
      <Compile Include="Assets\SCRIPTS\Level\Doors.cs" />
