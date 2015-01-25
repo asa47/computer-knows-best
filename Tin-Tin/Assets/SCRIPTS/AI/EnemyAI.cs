@@ -7,12 +7,17 @@ public class EnemyAI : MonoBehaviour
 
 	public enum aiStates {Patrol, Attack};
 	public float attackSpeed = 0.5f;
-	public float patrolSpeed=6f;
+	public float patrolSpeed=3.0f;
 	public float runSpeed=12f;
 	public Transform playerReference;
 	private aiStates myState = aiStates.Patrol;
 	private int waypointTargetIndex=0;
 	private float nextAttackTime = 0.0f;
+
+	public Animator enemyAnimate;
+
+	public float viewDistance;
+	public LayerMask rayMask; // LayerMask
 
 
 	private NavMeshAgent agentRef;
@@ -33,6 +38,12 @@ public class EnemyAI : MonoBehaviour
 	void Update()
 	{
 		DoAction ();
+		if (myState == aiStates.Patrol) {
+			//enemyAnimate.SetFloat ("speed", patrolSpeed);
+		} else {
+			enemyAnimate.SetFloat ("speed", runSpeed);
+		}
+
 	}
 	
 	
@@ -68,13 +79,15 @@ public class EnemyAI : MonoBehaviour
 		//cast ray towards player. if the ray hits something this means that the player is occluded. If it doesn't......check if the angle is smaller than the maximum visible angle...
 		bool isVisible = false;
 		RaycastHit hit;
-		if (Physics.Raycast(transform.position, playerReference.transform.position - transform.position, out hit))
+		Debug.Log (playerReference);
+		if (Physics.Raycast(transform.position, playerReference.transform.position - transform.position, out hit, viewDistance, rayMask)) // Layer Mask and Distance
 		{
+			print ("Hit: " + hit.point.ToString());
 			Debug.DrawLine(transform.position,hit.point, Color.blue);
 			if(hit.collider.gameObject.tag == "Player")
 			{
 
-				if(Vector3.Angle(transform.forward, playerReference.transform.position - transform.position)<90)
+				if(Vector3.Angle(transform.forward, playerReference.transform.position - transform.position)< 90)
 				{
 					isVisible = true;
 				}
@@ -87,7 +100,7 @@ public class EnemyAI : MonoBehaviour
 
 	void PatrolAction()
 	{
-		if(Vector3.Distance(transform.position, waypoints[waypointTargetIndex].position)<2)
+		if(Vector3.Distance(transform.position, waypoints[waypointTargetIndex].position)<4)
 		{
 			ChangeWaypointTarget();
 			ChangeTarget(waypoints[waypointTargetIndex].transform.position,patrolSpeed);
@@ -98,7 +111,7 @@ public class EnemyAI : MonoBehaviour
 
 	void AttackAction()
 	{
-		if(Vector3.Distance(transform.position, playerReference.transform.position)<2)
+		if(Vector3.Distance(transform.position, playerReference.transform.position)<4)
 		{
 			agentRef.speed = 0;
 			agentRef.velocity = Vector3.zero;
