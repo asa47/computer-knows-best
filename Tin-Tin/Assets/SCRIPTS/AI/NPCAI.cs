@@ -46,7 +46,10 @@ public class NPCAI : MonoBehaviour
 	{
 		while (true) 
 		{
-			agentRef.SetDestination(playerReference.transform.position);
+			if(agentRef!=null)
+			{
+				agentRef.SetDestination(playerReference.transform.position);
+			}
 			yield return new WaitForSeconds(0.1f); 
 		}
 	}

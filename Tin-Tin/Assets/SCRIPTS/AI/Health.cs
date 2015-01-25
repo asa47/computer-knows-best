@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Health : MonoBehaviour 
 {
 	public int health = 100;
+	public Image fadeout;
+
 
 	void Start()
 	{
@@ -52,6 +55,14 @@ public class Health : MonoBehaviour
 			if(collider != col)
 				col.enabled = true;
 		}
+
+		if(gameObject.name == "Player")
+		{
+			Debug.Log("gameover");
+			fadeout.color = Color.black;
+		}
+
+		enabled = false;
 
 	}
 

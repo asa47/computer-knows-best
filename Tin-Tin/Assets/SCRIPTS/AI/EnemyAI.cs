@@ -113,7 +113,7 @@ public class EnemyAI : MonoBehaviour
 
 	void AttackAction()
 	{
-		if(Vector3.Distance(transform.position, playerReferences[currentTargetIndex].transform.position)<4)
+		if(Vector3.Distance(transform.position, playerReferences[currentTargetIndex].transform.position)<5)
 		{
 			agentRef.speed = 0;
 			agentRef.velocity = Vector3.zero;
