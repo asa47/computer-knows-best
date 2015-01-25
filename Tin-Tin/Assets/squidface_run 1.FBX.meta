@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: 33ee11f799093a942b6fdd12ff82632e
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: PhotometricLight001
+    100002: PhotometricLight002
+    100004: Sphere001
+    100006: SquidControl
+    100008: SquidControlLArm1
+    100010: SquidControlLArm2
+    100012: SquidControlLArmCollarbone
+    100014: SquidControlLArmDigit11
+    100016: SquidControlLArmDigit12
+    100018: SquidControlLArmDigit21
+    100020: SquidControlLArmDigit22
+    100022: SquidControlLArmDigit31
+    100024: SquidControlLArmDigit32
+    100026: SquidControlLArmPalm
+    100028: SquidControlLLeg1
+    100030: SquidControlLLeg2
+    100032: SquidControlLLegAnkle
+    100034: SquidControlLLegPlatform
+    100036: SquidControlRArm1
+    100038: SquidControlRArm2
+    100040: SquidControlRArmCollarbone
+    100042: SquidControlRArmDigit11
+    100044: SquidControlRArmDigit12
+    100046: SquidControlRArmDigit21
+    100048: SquidControlRArmDigit22
+    100050: SquidControlRArmDigit31
+    100052: SquidControlRArmDigit32
+    100054: SquidControlRArmPalm
+    100056: SquidControlRLeg1
+    100058: SquidControlRLeg2
+    100060: SquidControlRLegAnkle
+    100062: SquidControlRLegPlatform
+    100064: SquidControlSpine1
+    100066: SquidControlSpine1 1
+    100068: SquidControlSpine2
+    100070: SquidControlSpine2 1
+    100072: SquidControlSpine3
+    100074: SquidControlSquid Head
+    100076: SquidControlSquid-Torso
+    100078: SquidControlSquid-UpperBody
+    100080: Squidface
+    100082: //RootNode
+    400000: PhotometricLight001
+    400002: PhotometricLight002
+    400004: Sphere001
+    400006: SquidControl
+    400008: SquidControlLArm1
+    400010: SquidControlLArm2
+    400012: SquidControlLArmCollarbone
+    400014: SquidControlLArmDigit11
+    400016: SquidControlLArmDigit12
+    400018: SquidControlLArmDigit21
+    400020: SquidControlLArmDigit22
+    400022: SquidControlLArmDigit31
+    400024: SquidControlLArmDigit32
+    400026: SquidControlLArmPalm
+    400028: SquidControlLLeg1
+    400030: SquidControlLLeg2
+    400032: SquidControlLLegAnkle
+    400034: SquidControlLLegPlatform
+    400036: SquidControlRArm1
+    400038: SquidControlRArm2
+    400040: SquidControlRArmCollarbone
+    400042: SquidControlRArmDigit11
+    400044: SquidControlRArmDigit12
+    400046: SquidControlRArmDigit21
+    400048: SquidControlRArmDigit22
+    400050: SquidControlRArmDigit31
+    400052: SquidControlRArmDigit32
+    400054: SquidControlRArmPalm
+    400056: SquidControlRLeg1
+    400058: SquidControlRLeg2
+    400060: SquidControlRLegAnkle
+    400062: SquidControlRLegPlatform
+    400064: SquidControlSpine1
+    400066: SquidControlSpine1 1
+    400068: SquidControlSpine2
+    400070: SquidControlSpine2 1
+    400072: SquidControlSpine3
+    400074: SquidControlSquid Head
+    400076: SquidControlSquid-Torso
+    400078: SquidControlSquid-UpperBody
+    400080: Squidface
+    400082: //RootNode
+    4300000: Squidface
+    4300002: Sphere001
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Sphere001
+    13700002: Squidface
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PhotometricLight001
+        weight: 1
+      - path: PhotometricLight002
+        weight: 1
+      - path: Sphere001
+        weight: 1
+      - path: SquidControl
+        weight: 1
+      - path: SquidControlLLegPlatform
+        weight: 1
+      - path: SquidControlRLegPlatform
+        weight: 1
+      - path: SquidControlSquid-Torso
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlLLeg1
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlLLeg1/SquidControlLLeg2
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlLLeg1/SquidControlLLeg2/SquidControlLLegAnkle
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlRLeg1
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlRLeg1/SquidControlRLeg2
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlRLeg1/SquidControlRLeg2/SquidControlRLegAnkle
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone/SquidControlLArm1
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone/SquidControlLArm1/SquidControlLArm2
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone/SquidControlLArm1/SquidControlLArm2/SquidControlLArmPalm
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone/SquidControlLArm1/SquidControlLArm2/SquidControlLArmPalm/SquidControlLArmDigit11
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone/SquidControlLArm1/SquidControlLArm2/SquidControlLArmPalm/SquidControlLArmDigit11/SquidControlLArmDigit12
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone/SquidControlLArm1/SquidControlLArm2/SquidControlLArmPalm/SquidControlLArmDigit21
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone/SquidControlLArm1/SquidControlLArm2/SquidControlLArmPalm/SquidControlLArmDigit21/SquidControlLArmDigit22
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone/SquidControlLArm1/SquidControlLArm2/SquidControlLArmPalm/SquidControlLArmDigit31
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlLArmCollarbone/SquidControlLArm1/SquidControlLArm2/SquidControlLArmPalm/SquidControlLArmDigit31/SquidControlLArmDigit32
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone/SquidControlRArm1
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone/SquidControlRArm1/SquidControlRArm2
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone/SquidControlRArm1/SquidControlRArm2/SquidControlRArmPalm
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone/SquidControlRArm1/SquidControlRArm2/SquidControlRArmPalm/SquidControlRArmDigit11
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone/SquidControlRArm1/SquidControlRArm2/SquidControlRArmPalm/SquidControlRArmDigit11/SquidControlRArmDigit12
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone/SquidControlRArm1/SquidControlRArm2/SquidControlRArmPalm/SquidControlRArmDigit21
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone/SquidControlRArm1/SquidControlRArm2/SquidControlRArmPalm/SquidControlRArmDigit21/SquidControlRArmDigit22
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone/SquidControlRArm1/SquidControlRArm2/SquidControlRArmPalm/SquidControlRArmDigit31
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlRArmCollarbone/SquidControlRArm1/SquidControlRArm2/SquidControlRArmPalm/SquidControlRArmDigit31/SquidControlRArmDigit32
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlSpine1
+          1
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlSpine1
+          1/SquidControlSpine2 1
+        weight: 1
+      - path: SquidControlSquid-Torso/SquidControlSpine1/SquidControlSpine2/SquidControlSpine3/SquidControlSquid-UpperBody/SquidControlSpine1
+          1/SquidControlSpine2 1/SquidControlSquid Head
+        weight: 1
+      - path: Squidface
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

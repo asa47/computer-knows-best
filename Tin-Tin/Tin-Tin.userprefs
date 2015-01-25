@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPTS\Player\PlayerRaycast.cs">
+    <Files>
+      <File FileName="Assets\SCRIPTS\AI\EnemyAI.cs" Line="81" Column="18" />
+      <File FileName="Assets\SCRIPTS\Player\playerMovement.cs" Line="39" Column="4" />
+      <File FileName="Assets\SCRIPTS\Player\PlayerRaycast.cs" Line="27" Column="120" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
