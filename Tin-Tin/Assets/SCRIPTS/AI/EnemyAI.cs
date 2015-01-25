@@ -19,6 +19,7 @@ public class EnemyAI : MonoBehaviour
 	public float viewDistance;
 	public LayerMask rayMask; // LayerMask
 
+	public int damage = 50;
 
 	private NavMeshAgent agentRef;
 	void Start()
@@ -176,8 +177,14 @@ public class EnemyAI : MonoBehaviour
 
 	void AttackPlayer()
 	{
-		Debug.Log ("player hit");
+		//Debug.Log ("player hit");
 		nextAttackTime = Time.time + attackSpeed;
+
+		if(playerReferences[currentTargetIndex].GetComponent<Health>()!=null)
+		{
+			playerReferences[currentTargetIndex].GetComponent<Health>().DealDamage(damage);
+		}
+		Debug.Log ("Player hit!!!!!!!!!!");
 
 		//stop the ai movement...make speed 0...)
 		//play attack animation and audio

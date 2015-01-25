@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPTS\AI\Health.cs">
     <Files>
-      <File FileName="Assets\SCRIPTS\AI\EnemyAI.cs" Line="85" Column="136" />
-      <File FileName="Assets\SCRIPTS\AI\NPCAI.cs" Line="1" Column="1" />
-      <File FileName="Assets\SCRIPTS\AI\Health.cs" Line="20" Column="3" />
-      <File FileName="Assets\SCRIPTS\Player\PlayerRaycast.cs" Line="43" Column="36" />
+      <File FileName="Assets\SCRIPTS\AI\NPCAI.cs" Line="33" Column="30" />
+      <File FileName="Assets\SCRIPTS\AI\EnemyAI.cs" Line="187" Column="38" />
+      <File FileName="Assets\SCRIPTS\AI\Health.cs" Line="27" Column="24" />
+      <File FileName="Assets\SCRIPTS\Player\PlayerRaycast.cs" Line="24" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
