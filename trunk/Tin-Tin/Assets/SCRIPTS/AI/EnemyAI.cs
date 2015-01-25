@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
 	public float attackSpeed = 0.5f;
 	public float patrolSpeed=3.0f;
 	public float runSpeed=12f;
-	public Transform playerReference;
+	public Transform[] playerReferences;
 	private aiStates myState = aiStates.Patrol;
 	private int waypointTargetIndex=0;
 	private float nextAttackTime = 0.0f;
@@ -72,7 +72,8 @@ public class EnemyAI : MonoBehaviour
 			yield return new WaitForSeconds(0.01f); 
 		}
 	}
-	
+
+	int currentTargetIndex = 0;
 	
 	bool IsPlayerVisible()
 	{
@@ -80,19 +81,19 @@ public class EnemyAI : MonoBehaviour
 		bool isVisible = false;
 		RaycastHit hit;
 		//Debug.Log (playerReference);
-		if (Physics.Raycast(transform.position, playerReference.transform.position - transform.position, out hit, viewDistance, rayMask)) // Layer Mask and Distance
-		{
-			print ("Hit: " + hit.point.ToString());
-			Debug.DrawLine(transform.position,hit.point, Color.blue);
-			if(hit.collider.gameObject.tag == "Player")
-			{
+		for (int i=0; i<playerReferences.Length; i++) {
+			if (Physics.Raycast (transform.position, playerReferences[i].transform.position - transform.position, out hit, viewDistance, rayMask)) { // Layer Mask and Distance
+								print ("Hit: " + hit.point.ToString ());
+								Debug.DrawLine (transform.position, hit.point, Color.blue);
+								if (hit.collider.gameObject.tag == "Player") {
 
-				if(Vector3.Angle(transform.forward, playerReference.transform.position - transform.position)< 90)
-				{
-					isVisible = true;
+					if (Vector3.Angle (transform.forward, playerReferences[i].transform.position - transform.position) < 90) {
+												isVisible = true;
+						currentTargetIndex = i;
+										}
+								}
+						}
 				}
-			}
-		}
 		if(isVisible)Debug.Log ("Player is visible? " + isVisible);
 		return isVisible;
 	}
@@ -111,7 +112,7 @@ public class EnemyAI : MonoBehaviour
 
 	void AttackAction()
 	{
-		if(Vector3.Distance(transform.position, playerReference.transform.position)<4)
+		if(Vector3.Distance(transform.position, playerReferences[currentTargetIndex].transform.position)<4)
 		{
 			agentRef.speed = 0;
 			agentRef.velocity = Vector3.zero;
@@ -122,7 +123,7 @@ public class EnemyAI : MonoBehaviour
 		}
 		else
 		{
-			ChangeTarget(playerReference.transform.position,runSpeed);
+			ChangeTarget(playerReferences[currentTargetIndex].transform.position,runSpeed);
 		}
 	}
 
