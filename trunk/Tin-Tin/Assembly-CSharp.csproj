@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\SCRIPTS\AI\EnemyAI.cs" />
      <Compile Include="Assets\SCRIPTS\Canvas\spawnAnimation.cs" />
+     <Compile Include="Assets\SCRIPTS\Level\DoorSpawnEnter.cs" />
      <Compile Include="Assets\SCRIPTS\Level\Doors.cs" />
      <Compile Include="Assets\SCRIPTS\MouseLook.cs" />
      <Compile Include="Assets\SCRIPTS\Ojectives\DisplayOjective.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\SCRIPTS\Player\MouseLook2.cs" />
      <Compile Include="Assets\SCRIPTS\Player\PlayerRaycast.cs" />
      <Compile Include="Assets\SCRIPTS\Player\UpperBodyRotation.cs" />
+     <Compile Include="Assets\SCRIPTS\Player\pAnimator.cs" />
      <Compile Include="Assets\SCRIPTS\Player\playerMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
