@@ -5,7 +5,8 @@ public class PlayerRaycast : MonoBehaviour {
 
 	public GameObject prefabLaser;
 	//Created Timer for intermission sequence
-	private float scriptTimer = 3.2f;
+	public AudioClip gunShot;
+	private float scriptTimer = 5.0f;
 	//private GameObject camera;
 
 	void Start () {
@@ -21,6 +22,7 @@ public class PlayerRaycast : MonoBehaviour {
 		if (scriptTimer <= 0) {
 						//On mouse click instantiate a new prefab laser and set the position
 						if (Input.GetMouseButtonDown (0)) {
+				         audio.PlayOneShot(gunShot);
 								GameObject laser = Instantiate (prefabLaser, transform.position + Vector3.up * 0.5f, Quaternion.identity) as GameObject;
 								laser.GetComponent<LaserScript> ().startPosition = laser.transform.position;
 								laser.GetComponent<LaserScript> ().endPosition = transform.position + Camera.main.transform.forward * 10 + Vector3.up * 1.0f;
