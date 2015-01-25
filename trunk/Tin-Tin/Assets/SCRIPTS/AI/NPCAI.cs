@@ -7,11 +7,12 @@ public class NPCAI : MonoBehaviour
 	public GameObject playerReference;
 	private bool followPlayer = false;
 	private NavMeshAgent agentRef;
-	
+	private Animator anim;
 	void Start()
 	{
 		playerReference = GameObject.FindGameObjectWithTag ("Player");
 		agentRef = GetComponent<NavMeshAgent> ();
+		anim = GetComponent<Animator> ();
 	}
 
 	void Update()
@@ -23,11 +24,13 @@ public class NPCAI : MonoBehaviour
 				if(followPlayer)
 				{
 					StopCoroutine("SetDestinationToPlayer");
+					anim.SetFloat("Speed",0f);
 					followPlayer = false;
 				}
 				else
 				{
 					StartCoroutine("SetDestinationToPlayer");
+					anim.SetFloat("Speed",1f);
 					followPlayer = true;
 				}
 			}
