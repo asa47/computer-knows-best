@@ -26,7 +26,9 @@ public class spawnAnimation : MonoBehaviour {
 			player.GetComponent<playerMovement>().enabled = true;
 			playerCamera1.GetComponent<MouseLook2>().enabled = true;
 			playerCamera2.GetComponent<MouseLook2>().enabled = true;
+			enabled = false;
 		}
 		}
+	
 	}
 

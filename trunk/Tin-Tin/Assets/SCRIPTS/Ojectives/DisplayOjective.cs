@@ -20,7 +20,7 @@ public class DisplayOjective : MonoBehaviour {
 		//If the player is in the room show the objective
 		if(other.gameObject.tag == "Player" && timer < 5.0f)
 		{
-			objectivesController.GetComponent<Image> ().color = Color.Lerp (objectivesController.GetComponent<Image> ().color, new Color(1f, 1f, 1f, 1f), 2.0f * Time.deltaTime);
+			objectivesController.GetComponent<Image> ().color = Color.Lerp (objectivesController.GetComponent<Image> ().color, new Color(1f, 1f, 1f, 0.5f), 2.0f * Time.deltaTime);
 			objectivesController.GetComponent<ObjectivesController>().index = indexOjective;
 			objectivesController.GetComponent<ObjectivesController>().isActive = true;
 			timer += Time.deltaTime;
