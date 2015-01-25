@@ -9,17 +9,16 @@ public class EnemyAI : MonoBehaviour
 	public float attackSpeed = 0.5f;
 	public float patrolSpeed=6f;
 	public float runSpeed=12f;
-
+	public Transform playerReference;
 	private aiStates myState = aiStates.Patrol;
-	private GameObject playerReference;
 	private int waypointTargetIndex=0;
 	private float nextAttackTime = 0.0f;
+
 
 	private NavMeshAgent agentRef;
 	void Start()
 	{
 		nextAttackTime = Time.time + attackSpeed;
-		playerReference = GameObject.FindGameObjectWithTag ("Player");
 		agentRef = GetComponent<NavMeshAgent> ();
 		StartCoroutine ("DetermineState");
 		waypointTargetIndex = FindClosesWaypoint ();
@@ -113,7 +112,8 @@ public class EnemyAI : MonoBehaviour
 			ChangeTarget(playerReference.transform.position,runSpeed);
 		}
 	}
-	
+
+
 	void ChangeTarget(Vector3 targetPos, float speed)
 	{
 		//play walk animation
@@ -149,10 +149,22 @@ public class EnemyAI : MonoBehaviour
 		return closestIndex;
 	}
 
+//	Tried to create collision
+//	void OnCollisionEnter(Collision collision)
+//	{
+//		if (collision.gameObject.tag == "Player") 
+//		{
+//			Debug.Log("Player Engaged");
+//			health = health-5;
+//
+//		}
+//	}
+
 	void AttackPlayer()
 	{
 		Debug.Log ("player hit");
 		nextAttackTime = Time.time + attackSpeed;
+
 		//stop the ai movement...make speed 0...)
 		//play attack animation and audio
 		//deal damage
